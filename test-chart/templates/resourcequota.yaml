@@ -4,11 +4,14 @@ kind: ResourceQuota
 metadata:
   name: {{ .name }}-quota
   namespace: {{ .name }}
+  labels:
+    app.kubernetes.io/instance: {{ .name }}-app
 spec:
   hard:
     requests.cpu: {{ .quota.requests.cpu }}
     requests.memory: {{ .quota.requests.memory }}
     limits.cpu: {{ .quota.limits.cpu }}
     limits.memory: {{ .quota.limits.memory }}
+---
 {{- end }}
 
