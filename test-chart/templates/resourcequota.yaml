@@ -6,8 +6,6 @@ metadata:
   namespace: {{ .name }}
 spec:
   hard:
-    requests.cpu: {{ .quota.requests.cpu }}
-    requests.memory: {{ .quota.requests.memory }}
     limits.cpu: {{ .quota.limits.cpu }}
     limits.memory: {{ .quota.limits.memory }}
 ---
