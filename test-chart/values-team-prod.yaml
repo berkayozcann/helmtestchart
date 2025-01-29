@@ -1,5 +1,5 @@
 namespaces:
-  - name: team-ops
+  - name: team-prod
     quota:
       limits:
         cpu: "4"
