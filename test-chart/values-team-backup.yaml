@@ -2,15 +2,15 @@ namespaces:
   - name: team-backup
     quota:
       limits:
-        cpu: "1500m"
-        memory: "2Gi"
+        cpu: "4"
+        memory: "6Gi"
     limitRange:
       defaultRequest:
-        cpu: "100m"
-        memory: "128Mi"
+        cpu: "300m"
+        memory: "400Mi"
       default:
-        cpu: "500m"
-        memory: "512Mi"
+        cpu: "1000m"
+        memory: "1200Mi"
       max:
         cpu: "2"
         memory: "3Gi"
